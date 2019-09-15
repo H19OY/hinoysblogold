@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About My College</title>
+<link rel="icon" href="../hb.jpg" type="image" sizes="16x16">
+ <link rel="stylesheet" type="text/css" href="review.css">
+</head>
+
+<body bgcolor="#E6E6FA">
+<center>
+<a href="../homepage.html">
+	<img src="../hinoysblog.jpg" alt="hinoy's blog" style="width: 150px; height: 45px "/>
+	</a>
+</center>
+<h1 align="middle">About My College</h1>
+<center>
+	<img src="../ndc.jpg"/>
+</center>
+<p>The college I went to is Notre Dame College!</p>
+<p>
+Every year Notre Dame College takes around 1700-1900 students in science, around 400 students in Humanities and around 750 students in Business Studies group through the most competitive college admission process in the country. With a few number of perfect GPA holders in Public Examination (SSC), Notre Dame College accepts students with best GPAs. Currently, it consists of 16 classrooms for students in science terming each as "Groups". In case of science, groups 1 to 14 includes Bengali medium students and the rest 15 and 16 groups admits English version students. Humanities has groups H, W and G while the Business Studies section has groups A, B, C, D, E and F. [6]
+
+
+</p>
+
+    <div class="container">
+      <!-- create tourist place form -->
+        <br>
+        <br>
+        <h2>Hey! Comment Down Below Your Thoughts!</h2>
+        <br>
+        <p></p>
+        <h5>Thank You</h5>
+        <br>
+        <div id="add-new-div">
+            <h2 class="add-new-title" id="name-new-title">Comment Box</h2>
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="name" class="input-lbl"> Name:</label>
+                </div>
+                <div class="col-txt">
+                    <input type="text" id="name" class="input-txt" name="name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="email" class="input-lbl"> email:</label>
+                </div>
+                <div class="col-txt">
+                    <input type="email" id="email" class="input-txt" name="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="rating" class="input-lbl"> Reaction:</label>
+                </div>
+                <div class="col-txt">
+                    <select id="rating" class="input-txt" name="rating">
+                        <option value="Happy">Happy</option>
+                        <option value="Laughing">Laughing</option>
+                        <option value="Sad">Sad</option>
+                        <option value="Angry">Angry</option>
+                        <option value="Motivated">Motivated</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="comment" class="input-lbl"> Comment:</label>
+                </div>
+                <div class="col-txt">
+                    <input type="text" id="comment" class="input-txt" name="comment">
+                </div>
+            </div>
+
+            <div class="row" id="submit-div">
+                <button class="add-new-button" onclick="addPlace()"> Submit</button>
+                <button class="add-new-reset" onclick="resetForm()"> Reset</button>
+            </div>
+
+            <div>
+                <a class="back" href="#" onclick="showTable()">Back to Conversation</a>
+            </div>
+        </div>
+
+        <!-- Tour places table -->
+
+        <div id="tour-places-div">
+            <table class="tablePlace" id="table-places">
+                <thead>
+                    <tr>
+                        <th class="name-col name-col-header">NAME</th>
+                        <th class="email-col">EMAIL</th>
+                        <th class="rating-col">REACTION</th>
+                        <th class="comment-col">COMMENT</th>
+                    </tr>
+                </thead>
+                <tbody id="table-places-tbody">
+
+                </tbody>
+
+            </table>
+            <input type="button" value="New Comment" class="backButton" onclick="BackToaddPlace()">
+        </div>
+
+        <script src="main.js"></script>
+        <br>
+        <br>
+    </div>
+
+
+
+
+</body>
+</html>

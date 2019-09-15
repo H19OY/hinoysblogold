@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About My University</title>
+<link rel="icon" href="../hb.jpg" type="image" sizes="16x16">
+ <link rel="stylesheet" type="text/css" href="review.css">
+</head>
+
+<body bgcolor="#E6E6FA">
+<center>
+	<a href="../homepage.html">
+	<img src="../hinoysblog.jpg" alt="hinoy's blog" style="width: 150px; height: 45px "/>
+	</a>
+</center>
+<h1 align="middle">About My University</h1>
+<center>
+	<img src="../mist.jpg"/>
+</center>
+<p>The University I went to is Military Institute of Science and Technology!</p>
+<p>MIST came into existence on 19 April 1998 and academic programs were launched in January 1999.
+ The initial batches included only selected military students. Feeling the necessity of spreading quality engineering education, the authority decided to admit civil students (both male and female) and from 2002, civilian students started to admit in different departments through passing a rigorous 'Admission Test'.
+ The maiden department of the institute is Civil Engineering department which started functioning from 1999. 
+ After that in 2000, Computer Science & Engineering (CSE) department established. 
+ Mechanical Engineering (ME) department and Electrical, Electronic & Communication Engineering (EECE) department were established on year 2003. MIST started its Masters program in different discipline from 2012 and MPhil/PhD from year 2014
+</p>
+    <div class="container">
+      <!-- create tourist place form -->
+        <br>
+        <br>
+        <h2>Hey! Comment Down Below Your Thoughts!</h2>
+        <br>
+        <p></p>
+        <h5>Thank You</h5>
+        <br>
+        <div id="add-new-div">
+            <h2 class="add-new-title" id="name-new-title">Comment Box</h2>
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="name" class="input-lbl"> Name:</label>
+                </div>
+                <div class="col-txt">
+                    <input type="text" id="name" class="input-txt" name="name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="email" class="input-lbl"> email:</label>
+                </div>
+                <div class="col-txt">
+                    <input type="email" id="email" class="input-txt" name="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="rating" class="input-lbl"> Reaction:</label>
+                </div>
+                <div class="col-txt">
+                    <select id="rating" class="input-txt" name="rating">
+                        <option value="Happy">Happy</option>
+                        <option value="Laughing">Laughing</option>
+                        <option value="Sad">Sad</option>
+                        <option value="Angry">Angry</option>
+                        <option value="Motivated">Motivated</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lbl">
+                    <label for="comment" class="input-lbl"> Comment:</label>
+                </div>
+                <div class="col-txt">
+                    <input type="text" id="comment" class="input-txt" name="comment">
+                </div>
+            </div>
+
+            <div class="row" id="submit-div">
+                <button class="add-new-button" onclick="addPlace()"> Submit</button>
+                <button class="add-new-reset" onclick="resetForm()"> Reset</button>
+            </div>
+
+            <div>
+                <a class="back" href="#" onclick="showTable()">Back to Conversation</a>
+            </div>
+        </div>
+
+        <!-- Tour places table -->
+
+        <div id="tour-places-div">
+            <table class="tablePlace" id="table-places">
+                <thead>
+                    <tr>
+                        <th class="name-col name-col-header">NAME</th>
+                        <th class="email-col">EMAIL</th>
+                        <th class="rating-col">REACTION</th>
+                        <th class="comment-col">COMMENT</th>
+                    </tr>
+                </thead>
+                <tbody id="table-places-tbody">
+
+                </tbody>
+
+            </table>
+            <input type="button" value="New Comment" class="backButton" onclick="BackToaddPlace()">
+        </div>
+
+        <script src="main.js"></script>
+        <br>
+        <br>
+    </div>
+
+
+
+
+</body>
+</html>
